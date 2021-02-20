@@ -1,0 +1,23 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  /* background-color: #dde2de; */
+  background-image: url("../img/bgimb.jpg");
+  background-size: cover;
+  height: 100%;
+}
+
+.navbar {
+  background-color: #3c4071 transparent !important;
+  opacity: 0.5;
+}
+.container {
+  text-align: center;
+  margin-top: 2.5%;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff !important;
+}

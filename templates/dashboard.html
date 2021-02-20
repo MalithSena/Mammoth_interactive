@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1 class="text-white">{{session.username}}'s Dashboard</h1> 
+
+<h3 class="text-white" style="margin-top: 5%;">Here's the task assigned to you by your admin</h3>
+
+<h4 class="text-white">Your task is: {{task}}</h4>
+{% endblock %}

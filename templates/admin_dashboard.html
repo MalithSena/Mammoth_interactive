@@ -1,0 +1,87 @@
+{% extends "admin_layout.html" %}
+<style>
+    .container{
+        margin-top: 0 !important;
+    }
+</style>
+{% block body %}
+
+<div class="banner">
+    <h1 class="banner-head">
+        Welcome Admin<br><br>
+        <small>Today is {{dates}}</small>
+    </h1>
+</div>
+
+
+<h2 id="responsive-grids" class="content-subhead">Statistics</h2>
+<div class="table-responsive">
+    <table class="mq-table pure-table-bordered pure-table" id="dataTable1">
+        <tbody>
+            <tr>
+                <td>User Signups</td>
+                <td>{{totalusers[1]}}</td>
+            </tr>
+            <tr>
+                <td>User Signups for last 24 hours</td>
+                <td>{{new_users[0]}}</td>
+            </tr>
+        </tbody>        
+    </table>
+</div>
+<br><br>
+<div class="table-responsive">
+    <table class="mq-table pure-table-bordered pure-table" id="dataTable">
+        <thead>
+            <tr>
+                <th>Member No.</th>
+                <th>Name</th>
+                <th>Favorite Color</th>
+                <th>Task Todo</th>
+                <th>Last Login</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for row in users%}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td><a href='user/{{row[1]}}'>{{row[1]}}</a></td>
+                <td>{{row[2]}}</td>
+                <td>{{row[5]}}</td>
+                <td>{{row[7]}}</td>    
+            </tr>    
+            {%endfor%}    
+        </tbody>    
+    </table>
+</div>
+<br>
+
+<div class="container">
+<h1>Assign Task</h1>
+<br>
+
+<form class="pure-form" action="assign" method="POST">
+    <fieldset id='field'>
+        <label>Username</label>
+    <select name="username" id="username">
+        {%for name in names%}
+            <option value="{{name[1]}}">{{name[1]}}</option>
+        {%endfor%}        
+    </select>
+    </fieldset>
+    <input type="text" name="assigned_tasks" value="{{request.form.assigned_tasks}}" placeholder="Assign Task" required>
+    <button type="submit" class="pure-button pure-button-primary">Submit</button>
+</form>
+  
+
+<p>{{message}}</p>
+
+
+</div>
+{% endblock %}
+    
+            
+       
+
+
+    

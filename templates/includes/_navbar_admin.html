@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <div class="header">
+        <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+            
+            {% if session.logged_in %}
+            <a class="pure-menu-heading" href="/admin_dashboard">Admin Dashboard</a>
+            {% else %}
+            <a class="navbar-brand" href="admin">Dashboard</a>
+            {% endif %}
+    
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item pure-menu-selected"><a href="admin_dashboard" class="pure-menu-link">Home</a></li>
+                <!-- <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tour</a></li> -->
+                {% if session.logged_in %}
+                <li class="pure-menu-item"><a href="admin_logout" class="pure-menu-link">Signout</a></li>
+                {% else %}
+                <li class="pure-menu-item"><a href="admin_logout" class="pure-menu-link">Login</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+
+    

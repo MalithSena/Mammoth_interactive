@@ -1,0 +1,19 @@
+{% extends 'admin_layout.html' %}
+
+{% block body %}
+<h1 class="text-white">Welcome to admin page</h1>
+<h1>{{message}}</h1>
+<br>
+<form action="/admin" class="pure-form" method="POST">
+    <fieldset>
+         
+        <input type="text" name="username" placeholder="username" />
+        <input type="password" name="password" placeholder="Password" />
+        <label for="default-remember">
+           
+        <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+    </fieldset>
+</form>
+
+
+{% endblock %}

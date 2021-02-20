@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#top-title {
+  margin: 0;
+}
+
+#dataTable {
+  margin: auto;
+}
+
+#dataTable1 {
+  margin: auto;
+  width: 50%;
+  border-style: solid bold;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  align-items: center;
+  position: relative;
+  margin-top: 5%;
+}
+
+.pure-form input[type] {
+  font-size: 100%;
+  width: 35%;
+  margin: 0 35%;
+  clear: both;
+  margin-bottom: 1em;
+  /* display: block; */
+  text-align: center;
+}
+
+.pure-button {
+  background-color: #1f8dd6;
+  text-decoration: none;
+  border-radius: 2px;
+  width: 35%;
+  margin: 0 35%;
+}
+
+#field {
+  width: 35%;
+  margin: 0 35%;
+}
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+  background: rgb(28, 184, 65);
+  /* this is a green */
+}
+
+.button-error {
+  background: rgb(202, 60, 60);
+  /* this is a maroon */
+}
+
+.button-warning {
+  background: rgb(223, 117, 20);
+  /* this is an orange */
+}
+
+.button-secondary {
+  background: rgb(66, 184, 221);
+  /* this is a light blue */
+}
