@@ -14,9 +14,9 @@ attrs @ file:///tmp/build/80754af9/attrs_1604765588209/work
 autopep8 @ file:///tmp/build/80754af9/autopep8_1596578164842/work
 Babel @ file:///tmp/build/80754af9/babel_1605108370292/work
 backcall==0.2.0
-backports.functools-lru-cache==1.6.1
+backports.functools-lru-cache @ file:///tmp/build/80754af9/backports.functools_lru_cache_1605305165209/work
 backports.shutil-get-terminal-size==1.0.0
-backports.tempfile==1.0
+backports.tempfile @ file:///home/linux1/recipes/ci/backports.tempfile_1610991236607/work
 backports.weakref==1.0.post1
 bcrypt @ file:///C:/ci/bcrypt_1597936263757/work
 beautifulsoup4 @ file:///tmp/build/80754af9/beautifulsoup4_1601924105527/work
@@ -36,7 +36,7 @@ clyent==1.2.2
 colorama @ file:///tmp/build/80754af9/colorama_1603211150991/work
 comtypes==1.1.7
 conda==4.9.2
-conda-build==3.20.5
+conda-build==3.21.4
 conda-package-handling @ file:///C:/ci/conda-package-handling_1603003327818/work
 conda-verify==3.4.2
 contextlib2==0.6.0.post1
